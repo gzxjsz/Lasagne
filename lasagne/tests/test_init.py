@@ -46,7 +46,7 @@ def test_specified_rng():
 
 
 def test_normal():
-    from lasagne.init import Normal
+    from lasagne.init   import Normal
 
     sample = Normal().sample((100, 200))
     assert -0.001 < sample.mean() < 0.001
